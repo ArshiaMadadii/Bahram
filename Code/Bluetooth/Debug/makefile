@@ -52,6 +52,9 @@ default.size.stdout \
 OBJDUMP_LIST += \
 Bluetooth.list \
 
+OBJCOPY_HEX += \
+Bluetooth.hex \
+
 
 # All Target
 all: main-build
@@ -75,12 +78,17 @@ Bluetooth.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
+Bluetooth.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "Bluetooth.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) Bluetooth.elf Bluetooth.list Bluetooth.map default.size.stdout
+	-$(RM) Bluetooth.elf Bluetooth.hex Bluetooth.list Bluetooth.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'

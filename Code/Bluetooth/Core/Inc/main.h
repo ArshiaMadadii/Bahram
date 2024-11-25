@@ -31,6 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+void send_number(char *str);  // پروتوتایپ تابع
 
 /* USER CODE END Includes */
 

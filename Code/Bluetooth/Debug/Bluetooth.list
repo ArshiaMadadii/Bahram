@@ -27,25 +27,25 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  0000300c  2**0
                   CONTENTS, READONLY
- 12 .debug_info   0000618f  00000000  00000000  00003035  2**0
+ 12 .debug_info   00006192  00000000  00000000  00003035  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 0000120c  00000000  00000000  000091c4  2**0
+ 13 .debug_abbrev 000011f7  00000000  00000000  000091c7  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 000005f0  00000000  00000000  0000a3d0  2**3
+ 14 .debug_aranges 000005f0  00000000  00000000  0000a3c0  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_rnglists 00000486  00000000  00000000  0000a9c0  2**0
+ 15 .debug_rnglists 00000486  00000000  00000000  0000a9b0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  00015da0  00000000  00000000  0000ae46  2**0
+ 16 .debug_macro  00016826  00000000  00000000  0000ae36  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   000072fc  00000000  00000000  00020be6  2**0
+ 17 .debug_line   0000747e  00000000  00000000  0002165c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0007e290  00000000  00000000  00027ee2  2**0
+ 18 .debug_str    000819d8  00000000  00000000  00028ada  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  000a6172  2**0
+ 19 .comment      00000043  00000000  00000000  000aa4b2  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  000016d8  00000000  00000000  000a61b8  2**2
+ 20 .debug_frame  000016d8  00000000  00000000  000aa4f8  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000004b  00000000  00000000  000a7890  2**0
+ 21 .debug_line_str 0000004b  00000000  00000000  000abbd0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -113,8 +113,8 @@ int main(void)
 
   /* USER CODE END 2 */
 
+
   /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
   while (1)
  8000160:	bf00      	nop
  8000162:	e7fd      	b.n	8000160 <main+0x14>
@@ -173,10 +173,10 @@ void SystemClock_Config(void)
 
   /** Initializes the CPU, AHB and APB buses clocks
   */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
  80001aa:	230f      	movs	r3, #15
  80001ac:	607b      	str	r3, [r7, #4]
-                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+                                | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
  80001ae:	2300      	movs	r3, #0
  80001b0:	60bb      	str	r3, [r7, #8]
@@ -214,15 +214,10 @@ void SystemClock_Config(void)
   * @param None
   * @retval None
   */
-static void MX_USART1_UART_Init(void)
+void MX_USART1_UART_Init(void)
 {
  80001dc:	b580      	push	{r7, lr}
  80001de:	af00      	add	r7, sp, #0
-  /* USER CODE END USART1_Init 0 */
-
-  /* USER CODE BEGIN USART1_Init 1 */
-
-  /* USER CODE END USART1_Init 1 */
   huart1.Instance = USART1;
  80001e0:	4b11      	ldr	r3, [pc, #68]	@ (8000228 <MX_USART1_UART_Init+0x4c>)
  80001e2:	4a12      	ldr	r2, [pc, #72]	@ (800022c <MX_USART1_UART_Init+0x50>)
@@ -265,10 +260,6 @@ static void MX_USART1_UART_Init(void)
     Error_Handler();
  800021e:	f000 f829 	bl	8000274 <Error_Handler>
   }
-  /* USER CODE BEGIN USART1_Init 2 */
-
-  /* USER CODE END USART1_Init 2 */
-
 }
  8000222:	bf00      	nop
  8000224:	bd80      	pop	{r7, pc}
@@ -281,14 +272,11 @@ static void MX_USART1_UART_Init(void)
   * @param None
   * @retval None
   */
-static void MX_GPIO_Init(void)
+void MX_GPIO_Init(void)
 {
  8000230:	b480      	push	{r7}
  8000232:	b083      	sub	sp, #12
  8000234:	af00      	add	r7, sp, #0
-/* USER CODE BEGIN MX_GPIO_Init_1 */
-/* USER CODE END MX_GPIO_Init_1 */
-
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOD_CLK_ENABLE();
  8000236:	4b0e      	ldr	r3, [pc, #56]	@ (8000270 <MX_GPIO_Init+0x40>)
@@ -312,9 +300,6 @@ static void MX_GPIO_Init(void)
  800025e:	f003 0304 	and.w	r3, r3, #4
  8000262:	603b      	str	r3, [r7, #0]
  8000264:	683b      	ldr	r3, [r7, #0]
-
-/* USER CODE BEGIN MX_GPIO_Init_2 */
-/* USER CODE END MX_GPIO_Init_2 */
 }
  8000266:	bf00      	nop
  8000268:	370c      	adds	r7, #12
