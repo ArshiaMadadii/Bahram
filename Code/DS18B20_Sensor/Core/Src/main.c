@@ -21,7 +21,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "ds18b20.h"
+#include "uart.h"
+#include "string.h"
+#include "stdio.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -43,7 +46,8 @@
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
-
+float temperature;
+char txt[50];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -89,8 +93,11 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART1_UART_Init();
-  /* USER CODE BEGIN 2 */
 
+  delay_us_dwt_init();
+ // delay_us_tim_init();
+  onewire_reset();
+ uartx_write_text(&huart1, "Hello DS18B20\r\n");
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -98,7 +105,12 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	temperature = DS18b20_temp();
+	sprintf(txt,"Temperature = %2.2f\r\n",temperature);
+	uartx_write_text(&huart1, txt);
+	HAL_Delay(800);
+	HAL_Delay(800);
+	//HAL_GPIO_TogglePin(led_GPIO_Port, led_Pin);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

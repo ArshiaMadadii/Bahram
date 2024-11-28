@@ -1,4 +1,5 @@
-Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
+Core/Librerias/puertos.o: ../Core/Librerias/puertos.c \
+ ../Core/Librerias/puertos.h ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -22,11 +23,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- D:/Git/Bahram/Code/DS18B20_Sensor/Core/Librerias/ds18b20.h \
- D:/Git/Bahram/Code/DS18B20_Sensor/Core/Librerias/onewire.h \
- D:/Git/Bahram/Code/DS18B20_Sensor/Core/Librerias/puertos.h \
- D:/Git/Bahram/Code/DS18B20_Sensor/Core/Librerias/delays.h \
- D:/Git/Bahram/Code/DS18B20_Sensor/Core/Librerias/uart.h
+ ../Core/Librerias/delays.h
+../Core/Librerias/puertos.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -51,8 +49,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
-D:/Git/Bahram/Code/DS18B20_Sensor/Core/Librerias/ds18b20.h:
-D:/Git/Bahram/Code/DS18B20_Sensor/Core/Librerias/onewire.h:
-D:/Git/Bahram/Code/DS18B20_Sensor/Core/Librerias/puertos.h:
-D:/Git/Bahram/Code/DS18B20_Sensor/Core/Librerias/delays.h:
-D:/Git/Bahram/Code/DS18B20_Sensor/Core/Librerias/uart.h:
+../Core/Librerias/delays.h:

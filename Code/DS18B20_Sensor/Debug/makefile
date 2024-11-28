@@ -12,6 +12,7 @@ RM := rm -rf
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
+-include Core/Librerias/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -52,6 +53,9 @@ default.size.stdout \
 OBJDUMP_LIST += \
 DS18B20_Sensor.list \
 
+OBJCOPY_HEX += \
+DS18B20_Sensor.hex \
+
 
 # All Target
 all: main-build
@@ -61,7 +65,7 @@ main-build: DS18B20_Sensor.elf secondary-outputs
 
 # Tool invocations
 DS18B20_Sensor.elf DS18B20_Sensor.map: $(OBJS) $(USER_OBJS) D:\Git\Bahram\Code\DS18B20_Sensor\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "DS18B20_Sensor.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Git\Bahram\Code\DS18B20_Sensor\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DS18B20_Sensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "DS18B20_Sensor.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Git\Bahram\Code\DS18B20_Sensor\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DS18B20_Sensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -75,12 +79,17 @@ DS18B20_Sensor.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
+DS18B20_Sensor.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "DS18B20_Sensor.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) DS18B20_Sensor.elf DS18B20_Sensor.list DS18B20_Sensor.map default.size.stdout
+	-$(RM) DS18B20_Sensor.elf DS18B20_Sensor.hex DS18B20_Sensor.list DS18B20_Sensor.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'

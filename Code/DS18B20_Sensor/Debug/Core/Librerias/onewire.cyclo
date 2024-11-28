@@ -1,0 +1,4 @@
+../Core/Librerias/onewire.c:9:9:onewire_reset	2
+../Core/Librerias/onewire.c:29:6:onewire_Write	3
+../Core/Librerias/onewire.c:58:9:onewire_readbit	2
+../Core/Librerias/onewire.c:74:9:onewire_Read	3

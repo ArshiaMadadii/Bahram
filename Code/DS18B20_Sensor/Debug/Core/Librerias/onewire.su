@@ -1,0 +1,4 @@
+../Core/Librerias/onewire.c:9:9:onewire_reset	16	static
+../Core/Librerias/onewire.c:29:6:onewire_Write	24	static
+../Core/Librerias/onewire.c:58:9:onewire_readbit	16	static
+../Core/Librerias/onewire.c:74:9:onewire_Read	16	static
