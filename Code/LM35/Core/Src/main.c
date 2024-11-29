@@ -24,6 +24,7 @@
 #include "uart.h"
 #include "string.h"
 #include "stdio.h"
+#include "LM35.h"
 
 /* USER CODE END Includes */
 
@@ -49,6 +50,10 @@ UART_HandleTypeDef huart1;
 char x[20];
 int adc_value;
 float temp;
+
+char buffer[50];  // Buffer for UART messages
+float temperature; // Variable to store the read temperature
+
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -100,20 +105,36 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
-
+/*
 	HAL_ADC_Init(&hadc1);
 	HAL_ADCEx_Calibration_Start(&hadc1);
 	HAL_ADC_Start(&hadc1);
 
-
+*/
   /* USER CODE END 2 */
-	uartx_write_text(&huart1, "Hello LM35...\r\n");
+		LM35_Init();  // Initialize LM35 sensor
+
+		// Send a startup message via UART
+		uartx_write_text(&huart1, "LM35 Temperature Sensor Initialized!\r\n");
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
 
+      // Read the current temperature
+      temperature = LM35_GetTemperature();
+
+      // Format the temperature value into a string
+      sprintf(buffer, "Current Temperature: %2.2f\r\n", temperature);
+
+      // Send the temperature reading over UART
+      uartx_write_text(&huart1, buffer);
+
+      // Wait for 1 second
+      HAL_Delay(1000);
+
+/*
 		if(HAL_ADC_PollForConversion(&hadc1,100) == HAL_OK)
 			{
 			adc_value = HAL_ADC_GetValue(&hadc1);
@@ -123,7 +144,7 @@ int main(void)
 	    sprintf(x,"TEMP:%2.2f\r\n",temp);
 		uartx_write_text(&huart1, x);
 		HAL_Delay(1000);
-
+*/
 
 	    /* USER CODE BEGIN 3 */
   }

@@ -1,3 +1,4 @@
+"./Core/Src/LM35.o"
 "./Core/Src/delays.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32f1xx_hal_msp.o"

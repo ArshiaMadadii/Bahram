@@ -28,6 +28,7 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f1xx_hal.h"
+extern ADC_HandleTypeDef hadc1;  // Declare ADC1 globally
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
