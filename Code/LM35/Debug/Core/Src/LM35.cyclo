@@ -1,2 +1,0 @@
-../Core/Src/LM35.c:19:6:LM35_Init	1
-../Core/Src/LM35.c:38:7:LM35_GetTemperature	2
