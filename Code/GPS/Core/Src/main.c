@@ -98,7 +98,7 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
+  char tx_buffer[] = "No Function";
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -119,68 +119,78 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+	  /* USER CODE END WHILE */
+	 	  uartx_write_text(&huart1, "Hello GPS1...\r\n");
+	 /*
+	 	  if (Wait_for("GGA") == 1)
+	 	 	  {
 
-	  if (Wait_for("GGA") == 1)
-	 	  {
+	 	 		  VCCTimeout = 5000;  // Reset the VCC Timeout indicating the GGA is being received
 
-	 		  VCCTimeout = 5000;  // Reset the VCC Timeout indicating the GGA is being received
+	 	 		  Copy_upto("*", GGA);
+	 	 		  if (decodeGGA(GGA, &gpsData.ggastruct) == 0) flagGGA = 2;  // 2 indicates the data is valid
+	 	 		  else flagGGA = 1;  // 1 indicates the data is invalid
+	 	 	  }
 
-	 		  Copy_upto("*", GGA);
-	 		  if (decodeGGA(GGA, &gpsData.ggastruct) == 0) flagGGA = 2;  // 2 indicates the data is valid
-	 		  else flagGGA = 1;  // 1 indicates the data is invalid
-	 	  }
+	 	 	  if (Wait_for("RMC") == 1)
+	 	 	  {
 
-	 	  if (Wait_for("RMC") == 1)
-	 	  {
+	 	 		  VCCTimeout = 5000;  // Reset the VCC Timeout indicating the RMC is being received
 
-	 		  VCCTimeout = 5000;  // Reset the VCC Timeout indicating the RMC is being received
+	 	 		  Copy_upto("*", RMC);
+	 	 		  if (decodeRMC(RMC, &gpsData.rmcstruct) == 0) flagRMC = 2;  // 2 indicates the data is valid
+	 	 		  else flagRMC = 1;  // 1 indicates the data is invalid
+	 	 	  }
 
-	 		  Copy_upto("*", RMC);
-	 		  if (decodeRMC(RMC, &gpsData.rmcstruct) == 0) flagRMC = 2;  // 2 indicates the data is valid
-	 		  else flagRMC = 1;  // 1 indicates the data is invalid
-	 	  }
+	 	 	  if((flagGGA == 2 ) | (flagRMC == 2 )){
+	 			  sprintf (lcdBuffer, "%02d:%02d:%02d, %02d%02d%02d", gpsData.ggastruct.tim.hour, \
+	 			gpsData.ggastruct.tim.min, gpsData.ggastruct.tim.sec, gpsData.rmcstruct.date.Day, \
 
-	 	  if((flagGGA == 2 ) | (flagRMC == 2 )){
-			  sprintf (lcdBuffer, "%02d:%02d:%02d, %02d%02d%02d", gpsData.ggastruct.tim.hour, \
-			gpsData.ggastruct.tim.min, gpsData.ggastruct.tim.sec, gpsData.rmcstruct.date.Day, \
+	 				gpsData.rmcstruct.date.Mon, gpsData.rmcstruct.date.Yr);
+	 	 			  //lcd_send_string(lcdBuffer);
+	 	 			  //memset(lcdBuffer, '\0', 50);
+	 	 			 // lcd_put_cur(1, 0);
+	 			  uartx_write_text(&huart1, lcdBuffer);
+	 			  sprintf (lcdBuffer, "%.2f%c, %.2f%c  ", gpsData.ggastruct.lcation.latitude, gpsData.ggastruct.lcation.NS,\
+	 	 					  gpsData.ggastruct.lcation.longitude, gpsData.ggastruct.lcation.EW);
+	 	 			  //lcd_send_string(lcdBuffer);
+	 			  uartx_write_text(&huart1, lcdBuffer);
+	 	 		  }
 
-				gpsData.rmcstruct.date.Mon, gpsData.rmcstruct.date.Yr);
-	 			  //lcd_send_string(lcdBuffer);
-	 			  //memset(lcdBuffer, '\0', 50);
-	 			 // lcd_put_cur(1, 0);
-			  uartx_write_text(&huart1, lcdBuffer);
-			  sprintf (lcdBuffer, "%.2f%c, %.2f%c  ", gpsData.ggastruct.lcation.latitude, gpsData.ggastruct.lcation.NS,\
-	 					  gpsData.ggastruct.lcation.longitude, gpsData.ggastruct.lcation.EW);
-	 			  //lcd_send_string(lcdBuffer);
-			  uartx_write_text(&huart1, lcdBuffer);
-	 		  }
+	 	 		  else if ((flagGGA == 1) | (flagRMC == 1))
+	 	 		  {
+	 	 			  // Instead of clearing the display, it's better if we print spaces.
+	 	 			  // This will avoid the "refreshing" part
+	 				  uartx_write_text(&huart1, "   NO FIX YET   ");
 
-	 		  else if ((flagGGA == 1) | (flagRMC == 1))
-	 		  {
-	 			  // Instead of clearing the display, it's better if we print spaces.
-	 			  // This will avoid the "refreshing" part
-				  uartx_write_text(&huart1, "   NO FIX YET   ");
+	 				  uartx_write_text(&huart1, "   Please wait  ");
 
-				  uartx_write_text(&huart1, "   Please wait  ");
+	 	 		  }
 
-	 		  }
+	 	 		  if (VCCTimeout <= 0)
+	 	 		  {
+	 	 			  VCCTimeout = 5000;  // Reset the timeout
 
-	 		  if (VCCTimeout <= 0)
-	 		  {
-	 			  VCCTimeout = 5000;  // Reset the timeout
+	 	 			  //reset flags
+	 	 			  flagGGA =flagRMC =0;
 
-	 			  //reset flags
-	 			  flagGGA =flagRMC =0;
-
-	 			  // You are here means the VCC is less, or maybe there is some connection issue
-	 			  // Check the VCC, also you can try connecting to the external 5V
+	 	 			  // You are here means the VCC is less, or maybe there is some connection issue
+	 	 			  // Check the VCC, also you can try connecting to the external 5V
 
 
-				  uartx_write_text(&huart1, "    VCC Issue   ");
+	 				  uartx_write_text(&huart1, "    VCC Issue   ");
 
-				  uartx_write_text(&huart1, "Check Connection");
+	 				  uartx_write_text(&huart1, "Check Connection");
 
-	 		  }
+	 	 		  }
+	 */
+
+	 	 		  HAL_Delay(1000);
+
+	 	 		 HAL_UART_Transmit(&huart1, (uint8_t *)tx_buffer, strlen(tx_buffer), 1000);
+	 	 		  HAL_Delay(1000);
+
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -198,12 +208,11 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI_DIV2;
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
@@ -219,7 +228,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
     Error_Handler();
   }

@@ -63,8 +63,8 @@ all: main-build
 main-build: GPS.elf secondary-outputs
 
 # Tool invocations
-GPS.elf GPS.map: $(OBJS) $(USER_OBJS) D:\Git\GPS\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "GPS.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Git\GPS\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+GPS.elf GPS.map: $(OBJS) $(USER_OBJS) D:\Git\Bahram\Code\GPS\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "GPS.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Git\Bahram\Code\GPS\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
