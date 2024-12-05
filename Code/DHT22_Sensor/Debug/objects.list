@@ -2,6 +2,7 @@
 "./Core/Librerias/delays.o"
 "./Core/Librerias/puertos.o"
 "./Core/Librerias/uart.o"
+"./Core/Src/DHT22_LIB.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32f1xx_hal_msp.o"
 "./Core/Src/stm32f1xx_it.o"

@@ -24,7 +24,7 @@
 #include "uart.h"
 #include "stdio.h"
 #include "string.h"
-//#include "DHT22.h"
+#include "DHT22_LIB.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -40,9 +40,9 @@
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
+/* USER CODE BEGIN PD *//*
 #define DHT22_Pin GPIO_PIN_9
-#define DHT22_GPIO_Port GPIOB
+#define DHT22_GPIO_Port GPIOB*/
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -58,7 +58,7 @@ UART_HandleTypeDef huart1;
 char outputBuffer[50];
 
 /* USER CODE BEGIN PV */
-
+/*
 char message1[16];
 char message2[16];
 uint8_t TOUT = 0, CheckSum, i;
@@ -67,6 +67,9 @@ float Voltage_mV = 0;
 float Temperature_C = 0;
 float Temperature_F = 0;
 char msg[50];
+*/
+float temperature = 0.0f;
+float humidity = 0.0f;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -153,7 +156,7 @@ static void MX_USART1_UART_Init(void);
 		  }
 		  return b;
 		}
-*/
+
 
 
 void delay_us(uint16_t us){
@@ -216,6 +219,9 @@ uint8_t read_byte(void) {
 void send_uart(char *string) {
     HAL_UART_Transmit(&huart1, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
 }
+
+
+*/
 /************************ DHT22 function finish **************************/
 
 /* USER CODE END 0 */
@@ -261,8 +267,9 @@ int main(void)
 
     // Define sensorData of type DHT22_Data
     //DHT22_Data sensorData;
-	HAL_TIM_Base_Start(&htim1);
-	send_uart("Initialization complete\n\r");
+	//HAL_TIM_Base_Start(&htim1);
+	DHT22_Init();
+	//send_uart("Initialization complete\n\r");
 	uartx_write_text(&huart1, "Start...\r\n");
   /* USER CODE END 2 */
 
@@ -316,7 +323,7 @@ int main(void)
 */
 
     /* USER CODE BEGIN 3 */
-
+/*
 			  HAL_Delay(1000); // Delay for 1 second
 	          start_signal(); // Send start signal to DHT22
 
@@ -356,12 +363,23 @@ int main(void)
 	                  send_uart("Checksum Error! Trying Again ...\r\n");
 	              }
 	          }
+*/
+
+
+	  if (DHT22_ReadData(&temperature, &humidity)) {
+	             char buffer[50];
+	             sprintf(buffer, "Temp: %.1f C, Hum: %.1f %%\n\r", temperature, humidity);
+	             DHT22_SendDebug(buffer);
+	         } else {
+	             DHT22_SendDebug("Failed to read from DHT22\n\r");
+	         }
+
+	         HAL_Delay(2000); // Wait 2 seconds between reads
+	     }
 
 
 
   }
-  /* USER CODE END 3 */
-}
 
 /**
   * @brief System Clock Configuration
