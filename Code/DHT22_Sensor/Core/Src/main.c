@@ -24,23 +24,25 @@
 #include "uart.h"
 #include "stdio.h"
 #include "string.h"
+//#include "DHT22.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+/*
 	typedef struct {
 			float temperature;
 			float humidity;
 	} SensorData;
 
 	SensorData DHT22;
-
+*/
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define DHT22_Pin GPIO_PIN_9
+#define DHT22_GPIO_Port GPIOB
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -57,6 +59,14 @@ char outputBuffer[50];
 
 /* USER CODE BEGIN PV */
 
+char message1[16];
+char message2[16];
+uint8_t TOUT = 0, CheckSum, i;
+uint8_t T_Byte1, T_Byte2, RH_Byte1, RH_Byte2;
+float Voltage_mV = 0;
+float Temperature_C = 0;
+float Temperature_F = 0;
+char msg[50];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -72,7 +82,7 @@ static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN 0 */
 
 /********************************** DHT22 function ******************************/
-
+/*
 	  	#define DHT22_PORT GPIOB
 		#define DHT22_PIN GPIO_PIN_9
 		uint8_t RH1, RH2, TC1, TC2, SUM, CHECK;
@@ -143,7 +153,69 @@ static void MX_USART1_UART_Init(void);
 		  }
 		  return b;
 		}
+*/
 
+
+void delay_us(uint16_t us){
+	__HAL_TIM_SET_COUNTER(&htim1,0);
+	while(__HAL_TIM_GET_COUNTER(&htim1) < us);
+}
+
+
+
+void start_signal(void) {
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+    GPIO_InitStruct.Pin = DHT22_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(DHT22_GPIO_Port, &GPIO_InitStruct);
+
+    HAL_GPIO_WritePin(DHT22_GPIO_Port, DHT22_Pin, GPIO_PIN_RESET);
+    HAL_Delay(18);
+    HAL_GPIO_WritePin(DHT22_GPIO_Port, DHT22_Pin, GPIO_PIN_SET);
+    delay_us(30); // Wait 20-40μs
+
+    GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+    HAL_GPIO_Init(DHT22_GPIO_Port, &GPIO_InitStruct);
+}
+
+
+uint8_t check_response(void) {
+    TOUT = 0;
+    __HAL_TIM_SET_COUNTER(&htim1, 0);
+    while (!HAL_GPIO_ReadPin(DHT22_GPIO_Port, DHT22_Pin) && (__HAL_TIM_GET_COUNTER(&htim1) < 100)) {};
+    if (__HAL_TIM_GET_COUNTER(&htim1) >= 100)
+        return 0;
+
+    __HAL_TIM_SET_COUNTER(&htim1, 0);
+    while (HAL_GPIO_ReadPin(DHT22_GPIO_Port, DHT22_Pin) && (__HAL_TIM_GET_COUNTER(&htim1) < 100)) {};
+    if (__HAL_TIM_GET_COUNTER(&htim1) >= 100)
+        return 0;
+
+    return 1;
+}
+
+
+
+
+uint8_t read_byte(void) {
+    uint8_t num = 0;
+    for (i = 0; i < 8; i++) {
+        while (!HAL_GPIO_ReadPin(DHT22_GPIO_Port, DHT22_Pin)) {};
+        __HAL_TIM_SET_COUNTER(&htim1, 0);
+        while (HAL_GPIO_ReadPin(DHT22_GPIO_Port, DHT22_Pin)) {};
+        if (__HAL_TIM_GET_COUNTER(&htim1) > 40) // 40μs threshold
+            num |= (1 << (7 - i));
+    }
+    return num;
+}
+
+
+
+void send_uart(char *string) {
+    HAL_UART_Transmit(&huart1, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
+}
 /************************ DHT22 function finish **************************/
 
 /* USER CODE END 0 */
@@ -181,8 +253,17 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_TIM_Base_Start(&htim1);
-  uartx_write_text(&huart1, "Start...\r\n");
+  //HAL_TIM_Base_Start(&htim1);
+
+
+  // Initialize DHT22 library
+    //DHT22_Init(&htim1);
+
+    // Define sensorData of type DHT22_Data
+    //DHT22_Data sensorData;
+	HAL_TIM_Base_Start(&htim1);
+	send_uart("Initialization complete\n\r");
+	uartx_write_text(&huart1, "Start...\r\n");
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -191,6 +272,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	 // HAL_Delay(10);
+	  /*
 	  HAL_Delay(2000); // 1-second delay
 	  uartx_write_text(&huart1, "1...\r\n");
 	    if (DHT22_Start())
@@ -231,9 +313,52 @@ int main(void)
 
 	        }
 	    }
+*/
 
-	    HAL_Delay(2000); // 1-second delay
     /* USER CODE BEGIN 3 */
+
+			  HAL_Delay(1000); // Delay for 1 second
+	          start_signal(); // Send start signal to DHT22
+
+	          uint8_t check = check_response();
+	          if (!check) {
+	              send_uart("No response from the sensor\r\n");
+	          } else {
+	              // Read bytes from DHT22
+	              RH_Byte1 = read_byte();
+	              RH_Byte2 = read_byte();
+	              T_Byte1 = read_byte();
+	              T_Byte2 = read_byte();
+	              CheckSum = read_byte();
+
+	              // Combine humidity and temperature bytes
+	              uint16_t rh = (RH_Byte1 << 8) | RH_Byte2;
+	              uint16_t temp = (T_Byte1 << 8) | T_Byte2;
+	              uint8_t sign = 0;
+
+	              // Check if temperature is negative
+	              if (temp > 0x8000) {
+	                  temp &= 0x7FFF; // Clear the sign bit
+	                  sign = 1; // Indicate negative temperature
+	              }
+
+	              char rh_buf[8], temp_buf[8];
+	              sprintf(rh_buf, "%2.2u", rh);
+	              sprintf(temp_buf, "%2.2u", temp);
+
+	              // Check checksum
+	              if (CheckSum == ((RH_Byte1 + RH_Byte2 + T_Byte1 + T_Byte2) & 0xFF)) {
+	                  sprintf(msg, "RH = %3u.%1u %% ", rh / 10, rh % 10);
+	                  send_uart(msg);
+	                  sprintf(msg, "Temp = %c%3u.%1u C \r\n", sign ? '-' : ' ', temp / 10, temp % 10);
+	                  send_uart(msg);
+	              } else {
+	                  send_uart("Checksum Error! Trying Again ...\r\n");
+	              }
+	          }
+
+
+
   }
   /* USER CODE END 3 */
 }
