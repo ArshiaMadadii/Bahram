@@ -191,6 +191,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	 // HAL_Delay(10);
+	  HAL_Delay(2000); // 1-second delay
 	  uartx_write_text(&huart1, "1...\r\n");
 	    if (DHT22_Start())
 	    {
@@ -231,7 +232,7 @@ int main(void)
 	        }
 	    }
 
-	    HAL_Delay(1000); // 1-second delay
+	    HAL_Delay(2000); // 1-second delay
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

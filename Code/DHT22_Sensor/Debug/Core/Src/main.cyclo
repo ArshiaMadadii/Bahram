@@ -2,8 +2,8 @@
 ../Core/Src/main.c:90:11:DHT22_Start	5
 ../Core/Src/main.c:121:11:DHT22_Read	7
 ../Core/Src/main.c:155:5:main	4
-../Core/Src/main.c:244:6:SystemClock_Config	3
-../Core/Src/main.c:284:13:MX_TIM1_Init	4
-../Core/Src/main.c:330:13:MX_USART1_UART_Init	2
-../Core/Src/main.c:363:13:MX_GPIO_Init	1
-../Core/Src/main.c:396:6:Error_Handler	1
+../Core/Src/main.c:245:6:SystemClock_Config	3
+../Core/Src/main.c:285:13:MX_TIM1_Init	4
+../Core/Src/main.c:331:13:MX_USART1_UART_Init	2
+../Core/Src/main.c:364:13:MX_GPIO_Init	1
+../Core/Src/main.c:397:6:Error_Handler	1
