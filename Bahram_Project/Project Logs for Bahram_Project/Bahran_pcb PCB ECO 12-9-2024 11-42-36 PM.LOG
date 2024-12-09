@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=VSSA Pin=MCU-8
+Added Pin To Net: NetName=GND Pin=MCU-8
+Change Net Name : Old Net Name=NetC_Oscillator1_2 New Net Name=NetCO1_2
+Added Member To Class: ClassName=Output Member=Component R22 4K7
+Added Room: Name=Comm
+Added Room: Name=MCU
+Added Room: Name=Output
+Added Room: Name=Power

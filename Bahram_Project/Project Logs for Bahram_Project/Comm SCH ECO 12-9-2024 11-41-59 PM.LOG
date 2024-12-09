@@ -1,0 +1,8 @@
+Change Component Designator: OldDesignator=C_Oscillator1 NewDesignator=CO1
+Change Component Designator: OldDesignator=C_Oscillator2 NewDesignator=CO2
+Change Component Designator: OldDesignator=Ferrite bead1 NewDesignator=FB1
+Change Component Designator: OldDesignator=Ferrite bead2 NewDesignator=FB2
+Change Component Designator: OldDesignator=MCU1 NewDesignator=MCU
+Change Component Designator: OldDesignator=MCU1 NewDesignator=MCU
+Change Pin Designator/Name:  Old Designator=LED6-1 Old Name=A New Designator =K New Name=2
+Change Pin Designator/Name:  Old Designator=LED6-2 Old Name=K New Designator =A New Name=1
