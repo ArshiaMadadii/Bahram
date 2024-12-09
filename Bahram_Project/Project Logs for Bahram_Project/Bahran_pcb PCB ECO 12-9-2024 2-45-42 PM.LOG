@@ -1,0 +1,5 @@
+Change Component Comment : Designator=1 Old Comment=tanSIM New Comment=Tan_SIM1
+Change Component Designator: OldDesignator=1 NewDesignator=Tan_SIM1
+Change Component Designator: OldDesignator=2 NewDesignator=Tan_SIM2
+Added Room: Name=Comm
+Added Room: Name=Power
