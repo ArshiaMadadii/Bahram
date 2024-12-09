@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=R5 Old Footprint=RES 0603_1608 New Footprint=RESC3413X04N
+Change component parameters: Designator = "R5" ("R5"); Footprint = "RES 0603_1608"; UniqueID = "\QSKCXQII" ("\QSKCXQII")
+Change component parameters (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Desc."; Value = "RES SMD 0805"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Power Member=Component U2 AMS1117
+Added Room: Name=Power
