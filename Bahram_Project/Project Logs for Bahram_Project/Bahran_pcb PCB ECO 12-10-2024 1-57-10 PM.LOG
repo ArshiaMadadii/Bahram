@@ -1,0 +1,8 @@
+Added Component: Designator=LED6(LED_0805_GREEN)
+Added Pin To Net: NetName=GND Pin=LED6-1
+Added Pin To Net: NetName=NetLED6_2 Pin=LED6-2
+Added Member To Class: ClassName=Output Member=Component LED6 LED SMD 0805 GREEN
+Added Room: Name=Comm
+Added Room: Name=MCU
+Added Room: Name=Output
+Added Room: Name=Power

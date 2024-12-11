@@ -1,616 +1,31 @@
 Protel Design System Design Rule Check
 PCB File : D:\Git\Bahram\Bahram_Project\Bahran_pcb.PcbDoc
-Date     : 12/10/2024
-Time     : 1:28:50 AM
+Date     : 12/11/2024
+Time     : 2:08:04 PM
 
-Processing Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-(68.79mm,73.395mm) on Top Layer And Pad MCU-2(68.29mm,73.395mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-10(64.29mm,73.395mm) on Top Layer And Pad MCU-11(63.79mm,73.395mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-10(64.29mm,73.395mm) on Top Layer And Pad MCU-9(64.79mm,73.395mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-11(63.79mm,73.395mm) on Top Layer And Pad MCU-12(63.29mm,73.395mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-13(61.86mm,71.965mm) on Top Layer And Pad MCU-14(61.86mm,71.465mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-14(61.86mm,71.465mm) on Top Layer And Pad MCU-15(61.86mm,70.965mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-15(61.86mm,70.965mm) on Top Layer And Pad MCU-16(61.86mm,70.465mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-16(61.86mm,70.465mm) on Top Layer And Pad MCU-17(61.86mm,69.965mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-17(61.86mm,69.965mm) on Top Layer And Pad MCU-18(61.86mm,69.465mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-18(61.86mm,69.465mm) on Top Layer And Pad MCU-19(61.86mm,68.965mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-19(61.86mm,68.965mm) on Top Layer And Pad MCU-20(61.86mm,68.465mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-2(68.29mm,73.395mm) on Top Layer And Pad MCU-3(67.79mm,73.395mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-20(61.86mm,68.465mm) on Top Layer And Pad MCU-21(61.86mm,67.965mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-21(61.86mm,67.965mm) on Top Layer And Pad MCU-22(61.86mm,67.465mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-22(61.86mm,67.465mm) on Top Layer And Pad MCU-23(61.86mm,66.965mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-23(61.86mm,66.965mm) on Top Layer And Pad MCU-24(61.86mm,66.465mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-25(63.29mm,65.035mm) on Top Layer And Pad MCU-26(63.79mm,65.035mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-26(63.79mm,65.035mm) on Top Layer And Pad MCU-27(64.29mm,65.035mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-27(64.29mm,65.035mm) on Top Layer And Pad MCU-28(64.79mm,65.035mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-28(64.79mm,65.035mm) on Top Layer And Pad MCU-29(65.29mm,65.035mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-29(65.29mm,65.035mm) on Top Layer And Pad MCU-30(65.79mm,65.035mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-3(67.79mm,73.395mm) on Top Layer And Pad MCU-4(67.29mm,73.395mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-30(65.79mm,65.035mm) on Top Layer And Pad MCU-31(66.29mm,65.035mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-31(66.29mm,65.035mm) on Top Layer And Pad MCU-32(66.79mm,65.035mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-32(66.79mm,65.035mm) on Top Layer And Pad MCU-33(67.29mm,65.035mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-33(67.29mm,65.035mm) on Top Layer And Pad MCU-34(67.79mm,65.035mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-34(67.79mm,65.035mm) on Top Layer And Pad MCU-35(68.29mm,65.035mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-35(68.29mm,65.035mm) on Top Layer And Pad MCU-36(68.79mm,65.035mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-37(70.22mm,66.465mm) on Top Layer And Pad MCU-38(70.22mm,66.965mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-38(70.22mm,66.965mm) on Top Layer And Pad MCU-39(70.22mm,67.465mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-39(70.22mm,67.465mm) on Top Layer And Pad MCU-40(70.22mm,67.965mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-4(67.29mm,73.395mm) on Top Layer And Pad MCU-5(66.79mm,73.395mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-40(70.22mm,67.965mm) on Top Layer And Pad MCU-41(70.22mm,68.465mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-41(70.22mm,68.465mm) on Top Layer And Pad MCU-42(70.22mm,68.965mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-42(70.22mm,68.965mm) on Top Layer And Pad MCU-43(70.22mm,69.465mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-43(70.22mm,69.465mm) on Top Layer And Pad MCU-44(70.22mm,69.965mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-44(70.22mm,69.965mm) on Top Layer And Pad MCU-45(70.22mm,70.465mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-45(70.22mm,70.465mm) on Top Layer And Pad MCU-46(70.22mm,70.965mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-46(70.22mm,70.965mm) on Top Layer And Pad MCU-47(70.22mm,71.465mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-47(70.22mm,71.465mm) on Top Layer And Pad MCU-48(70.22mm,71.965mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-5(66.79mm,73.395mm) on Top Layer And Pad MCU-6(66.29mm,73.395mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-6(66.29mm,73.395mm) on Top Layer And Pad MCU-7(65.79mm,73.395mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-7(65.79mm,73.395mm) on Top Layer And Pad MCU-8(65.29mm,73.395mm) on Top Layer 
-   Violation between Clearance Constraint: (0.22mm < 0.254mm) Between Pad MCU-8(65.29mm,73.395mm) on Top Layer And Pad MCU-9(64.79mm,73.395mm) on Top Layer 
-   Violation between Clearance Constraint: (Collision < 0.254mm) Between Pad MCU-8(65.29mm,73.395mm) on Top Layer And Track (65.284mm,73.401mm)(65.284mm,74.817mm) on Top Layer 
-   Violation between Clearance Constraint: (Collision < 0.254mm) Between Pad MCU-8(65.29mm,73.395mm) on Top Layer And Track (65.284mm,73.401mm)(65.29mm,73.395mm) on Top Layer 
-   Violation between Clearance Constraint: (0.248mm < 0.254mm) Between Pad MCU-9(64.79mm,73.395mm) on Top Layer And Track (65.278mm,71.247mm)(65.278mm,72.771mm) on Top Layer 
-Rule Violations :47
+Processing Rule : Clearance Constraint (Gap=0.16mm) (All),(All)
+Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
-   Violation between Short-Circuit Constraint: Between Pad MCU-8(65.29mm,73.395mm) on Top Layer And Track (65.284mm,73.401mm)(65.284mm,74.817mm) on Top Layer Location : [X = 65.284mm][Y = 73.738mm]
-   Violation between Short-Circuit Constraint: Between Pad MCU-8(65.29mm,73.395mm) on Top Layer And Track (65.284mm,73.401mm)(65.29mm,73.395mm) on Top Layer Location : [X = 65.287mm][Y = 73.398mm]
-Rule Violations :2
+Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net 3V3 Between Pad C15-1(66.028mm,99.187mm) on Bottom Layer And Pad C14-1(67.703mm,99.187mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Track (88.773mm,100.701mm)(88.773mm,101.378mm) on Top Layer And Pad C25-1(90.932mm,99.632mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad LED8-2(114.197mm,81.883mm) on Top Layer And Pad DHT11-GND(123.825mm,81.534mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad LED4-2(43.823mm,84.603mm) on Top Layer And Pad R29-2(59.309mm,84.532mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net 3V3 Between Track (67.747mm,95.074mm)(68.072mm,95.074mm) on Bottom Layer And Track (71.595mm,93.515mm)(71.712mm,93.398mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Via (100.965mm,113.792mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (101.092mm,124.333mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (102.046mm,43.856mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (102.046mm,44.872mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (102.743mm,124.333mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (103.062mm,43.856mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (103.062mm,44.872mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (104.332mm,43.856mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (104.332mm,44.872mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (104.902mm,124.333mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (105.07mm,36.257mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (105.07mm,37.4mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (105.07mm,38.67mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (105.07mm,39.71mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (105.475mm,43.856mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (105.475mm,44.872mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (106.086mm,36.257mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (106.086mm,37.4mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (106.086mm,38.67mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (106.086mm,39.71mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (106.491mm,43.983mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (106.491mm,44.999mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (106.553mm,124.333mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (106.975mm,36.257mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (106.975mm,37.4mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (106.975mm,38.67mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (106.975mm,39.71mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (107.507mm,43.983mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (107.507mm,44.999mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (107.991mm,36.257mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (107.991mm,37.4mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (107.991mm,38.67mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (107.991mm,39.71mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (108.458mm,124.333mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (108.777mm,43.983mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (108.777mm,44.999mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (109.007mm,42.861mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (109.155mm,36.257mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (109.155mm,37.4mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (109.155mm,38.67mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (109.155mm,39.71mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (109.92mm,43.983mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (109.92mm,44.999mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (110.023mm,42.861mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (110.109mm,124.333mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (110.548mm,109.543mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (110.548mm,110.99mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (111.166mm,42.861mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (112.182mm,42.861mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (112.961mm,100.703mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (112.961mm,102.05mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (112.961mm,103.497mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (113.088mm,108.196mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (113.088mm,109.543mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (113.088mm,110.99mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (113.088mm,112.337mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (113.157mm,114.046mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (113.157mm,115.392mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (113.157mm,116.586mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (113.157mm,117.932mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (114.292mm,125.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (114.3mm,123.698mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (114.427mm,108.204mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (114.427mm,109.55mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (114.427mm,110.998mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (114.427mm,112.344mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (114.496mm,114.054mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (114.496mm,115.4mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (114.496mm,116.594mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (114.496mm,117.94mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (115.501mm,100.388mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (115.501mm,102.039mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (115.501mm,103.563mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (115.501mm,99.118mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (115.57mm,105.639mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (115.57mm,106.985mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (115.57mm,108.331mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (115.57mm,109.677mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (115.57mm,111.023mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (115.57mm,112.37mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (115.639mm,125.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (115.646mm,123.698mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (115.648mm,114.103mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (115.648mm,115.449mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.136mm,86.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.517mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.848mm,100.388mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.848mm,102.039mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.848mm,103.563mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.848mm,99.118mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.898mm,105.595mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.909mm,106.992mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.909mm,108.339mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.909mm,109.685mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.909mm,111.031mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.909mm,112.377mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.959mm,125.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.967mm,123.698mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.987mm,114.111mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (116.987mm,115.457mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (117.483mm,86.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (117.667mm,44.237mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (117.864mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (117.864mm,93.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (118.194mm,100.388mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (118.194mm,102.039mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (118.194mm,103.563mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (118.194mm,99.118mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (118.245mm,105.595mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (118.306mm,106.992mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (118.306mm,108.339mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (118.306mm,109.685mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (118.306mm,125.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (118.313mm,123.698mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (118.676mm,86.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (118.683mm,43.221mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (118.683mm,44.237mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (119.057mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (119.057mm,93.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (119.499mm,125.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (119.507mm,123.698mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (119.54mm,100.388mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (119.54mm,102.039mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (119.54mm,103.563mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (119.54mm,99.118mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (119.591mm,105.595mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (119.953mm,43.221mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (119.953mm,44.237mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (120.023mm,86.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (120.404mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (120.404mm,93.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (120.404mm,95.308mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (120.846mm,125.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (120.853mm,123.698mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (120.886mm,100.388mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (120.886mm,102.039mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (120.886mm,103.563mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (120.937mm,105.595mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (121.369mm,86.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (121.75mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (121.75mm,93.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (121.75mm,95.308mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (122.166mm,125.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (122.174mm,123.698mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (122.715mm,86.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (123.063mm,105.461mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (123.063mm,106.807mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (123.096mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (123.096mm,93.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (123.096mm,95.308mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (123.513mm,125.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (123.52mm,123.698mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (124.061mm,86.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (124.402mm,105.468mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (124.402mm,106.815mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (124.442mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (124.442mm,93.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (124.442mm,95.308mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (124.833mm,125.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (124.841mm,123.698mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (125.534mm,86.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (125.672mm,100.846mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (125.672mm,102.192mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (125.672mm,99.499mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (125.857mm,105.461mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (125.857mm,106.807mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (125.857mm,98.171mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (125.915mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (125.915mm,93.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (125.915mm,95.308mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (126.187mm,123.698mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (126.18mm,125.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (126.881mm,86.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (127.196mm,100.846mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (127.196mm,102.192mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (127.196mm,105.468mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (127.196mm,98.179mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (127.196mm,99.499mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (127.262mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (127.262mm,93.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (127.262mm,95.308mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (127.373mm,118.56mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (127.373mm,122.497mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (127.373mm,125.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (127.381mm,117.221mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (127.381mm,121.158mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (127.381mm,123.698mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.227mm,86.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.608mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.608mm,93.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.608mm,95.308mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.727mm,117.221mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.727mm,121.158mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.727mm,122.497mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.727mm,123.698mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.727mm,125.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.729mm,114.23mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.729mm,115.576mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.72mm,118.56mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.847mm,100.846mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.847mm,102.192mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (128.847mm,99.499mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (129.573mm,86.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (129.954mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (129.954mm,93.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (129.954mm,95.308mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (129.954mm,96.578mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (130.068mm,114.238mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (130.068mm,115.584mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (130.919mm,86.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (131.3mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (131.3mm,93.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (131.3mm,95.308mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (131.3mm,96.578mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (131.3mm,97.721mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (132.149mm,98.737mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (132.276mm,101.481mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (132.276mm,102.827mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (132.276mm,104.325mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (132.276mm,105.672mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (132.53mm,86.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (132.911mm,89.085mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (132.911mm,90.432mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (132.911mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (132.911mm,93.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (132.911mm,95.308mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (132.911mm,96.578mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (132.911mm,97.721mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (133.8mm,101.481mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (133.8mm,102.827mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (133.8mm,104.325mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (133.8mm,105.672mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (133.8mm,107.018mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (133.8mm,108.364mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (133.8mm,109.71mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (134.435mm,89.085mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (134.435mm,90.432mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (134.435mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (134.435mm,93.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (134.435mm,95.308mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (134.435mm,96.578mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (135.324mm,100.134mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (135.324mm,101.481mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (135.324mm,102.827mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (135.324mm,104.325mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (135.324mm,105.672mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (135.324mm,107.018mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (135.324mm,108.364mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (135.324mm,109.71mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (135.324mm,98.941mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (135.705mm,86.291mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (136.086mm,89.085mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (136.086mm,90.432mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (136.086mm,92.133mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (136.086mm,93.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (136.086mm,95.308mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (137.102mm,100.134mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (137.102mm,101.481mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (137.102mm,102.827mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (137.102mm,104.325mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (137.102mm,105.672mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (137.102mm,107.018mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (137.102mm,108.364mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (137.102mm,109.71mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (137.102mm,97.594mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (137.102mm,98.941mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (137.492mm,114.103mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.633mm,116.078mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.633mm,117.671mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.633mm,118.999mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.633mm,120.338mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.633mm,121.539mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.633mm,123.132mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,100.134mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,101.481mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,102.827mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,104.325mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,105.672mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,107.018mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,108.364mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,109.71mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,111.031mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,112.377mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,88.73mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,90.228mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,91.575mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,92.921mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,94.267mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,95.613mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,97.594mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.753mm,98.941mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (138.831mm,114.111mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (27.854mm,100.392mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (28.87mm,100.392mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (30.099mm,100.392mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (31.115mm,100.392mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (32.32mm,104.394mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (32.32mm,105.41mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (32.32mm,106.639mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (32.32mm,107.655mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (32.612mm,40.157mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (33.831mm,36.728mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (33.831mm,38.379mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (33.831mm,40.157mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (33.831mm,41.427mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (33.831mm,42.57mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.098mm,104.521mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.098mm,105.537mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.098mm,106.766mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.098mm,107.782mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.098mm,108.839mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.098mm,109.855mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.098mm,111.084mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.098mm,112.1mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.798mm,115.062mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.798mm,117.348mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.798mm,118.491mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.798mm,119.634mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.987mm,95.336mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.987mm,96.393mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.987mm,97.409mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.987mm,98.638mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (34.987mm,99.654mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (35.152mm,36.728mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (35.152mm,38.379mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (35.152mm,40.157mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (35.152mm,41.427mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (35.152mm,42.57mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (36.195mm,117.348mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (36.195mm,123.19mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (36.498mm,36.728mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (36.498mm,38.379mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (36.498mm,40.157mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (36.498mm,41.427mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (36.498mm,42.57mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (36.892mm,92.837mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (36.892mm,94.066mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (36.892mm,95.082mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (36.892mm,96.393mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (36.892mm,97.409mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (36.892mm,98.638mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (36.892mm,99.654mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (37.211mm,117.348mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (37.338mm,123.19mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (37.782mm,47.62mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (37.794mm,46.38mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (37.844mm,36.728mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (37.844mm,38.379mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (37.844mm,40.157mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (37.844mm,41.427mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (37.844mm,42.57mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (37.844mm,43.84mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (37.844mm,45.11mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (38.543mm,91.821mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (38.543mm,92.837mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (38.543mm,94.066mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (38.543mm,95.082mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (38.543mm,96.393mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (38.543mm,97.409mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (38.543mm,98.638mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (38.543mm,99.654mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (38.694mm,123.19mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (39.052mm,50.16mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (39.064mm,48.92mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (39.179mm,47.747mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (39.191mm,36.728mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (39.191mm,38.379mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (39.191mm,40.157mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (39.191mm,41.427mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (39.191mm,42.57mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (39.191mm,43.84mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (39.191mm,45.11mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (39.191mm,46.507mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (39.497mm,117.348mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (39.837mm,123.19mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.259mm,91.821mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.259mm,92.837mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.259mm,94.066mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.259mm,95.082mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.259mm,96.393mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.259mm,97.409mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.259mm,98.638mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.259mm,99.654mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.525mm,47.747mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.537mm,36.728mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.537mm,38.379mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.537mm,40.157mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.537mm,41.427mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.537mm,42.57mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.537mm,43.84mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.537mm,45.11mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (40.537mm,46.507mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (41.275mm,123.19mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (42.035mm,36.728mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (42.035mm,38.379mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (42.035mm,40.157mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (42.035mm,41.427mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (42.035mm,42.57mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (42.035mm,43.84mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (42.035mm,45.11mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (42.035mm,46.507mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (42.418mm,123.19mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (43.18mm,117.348mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (43.504mm,48.768mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (43.504mm,49.911mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (43.504mm,51.181mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (43.504mm,52.451mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (43.504mm,53.848mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (43.509mm,40.157mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (43.509mm,41.427mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (43.509mm,42.57mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (43.509mm,43.84mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (43.509mm,45.11mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (43.774mm,123.19mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (44.704mm,117.348mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (44.779mm,40.157mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (44.779mm,41.427mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (44.779mm,42.57mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (44.779mm,43.84mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (44.831mm,47.498mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (44.831mm,48.768mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (44.831mm,49.911mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (44.831mm,51.181mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (44.831mm,52.451mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (44.831mm,53.848mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (44.831mm,55.626mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (44.917mm,123.19mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (45.998mm,40.157mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (45.998mm,41.427mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (45.998mm,42.57mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (46.298mm,47.498mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (46.298mm,48.768mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (46.298mm,49.911mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (46.298mm,51.181mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (46.298mm,52.451mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (46.298mm,53.848mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (46.298mm,55.626mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (47.268mm,36.728mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (47.268mm,38.379mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (47.268mm,40.157mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (47.268mm,41.427mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (54.812mm,49.809mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (54.862mm,43.586mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (54.862mm,44.856mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (54.862mm,45.999mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (54.862mm,47.269mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (54.862mm,48.539mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (54.8mm,51.049mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (54.927mm,42.286mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (54.939mm,41.046mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (54.989mm,36.093mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (54.989mm,38.506mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (54.989mm,39.776mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (56.642mm,122.809mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (56.706mm,51.024mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (56.718mm,49.784mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (56.769mm,43.561mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (56.769mm,44.831mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (56.769mm,45.974mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (56.769mm,47.244mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (56.769mm,48.514mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (56.833mm,42.261mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (56.845mm,41.021mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (56.896mm,36.068mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (56.896mm,38.481mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (56.896mm,39.751mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (57.658mm,122.809mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (58.608mm,43.584mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (58.608mm,44.854mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (58.608mm,45.997mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (58.672mm,42.284mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (58.684mm,41.044mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (58.735mm,38.504mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (58.735mm,39.774mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (58.756mm,36.085mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (58.887mm,122.809mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (59.903mm,122.809mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (62.23mm,114.554mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (63.246mm,114.554mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (64.475mm,114.492mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (65.491mm,114.492mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (68.326mm,114.492mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (71.12mm,122.428mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (71.628mm,114.935mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (74.549mm,115.062mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (75.565mm,119.507mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (76.835mm,115.062mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (78.613mm,123.952mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (78.674mm,123.086mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (79.883mm,113.919mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (79.883mm,115.488mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (79.883mm,116.84mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (79.883mm,123.063mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (79.883mm,123.952mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (85.217mm,112.649mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (85.217mm,114.3mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (85.344mm,115.697mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (85.344mm,117.348mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (85.344mm,118.745mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (85.344mm,120.396mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (86.487mm,124.333mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (88.138mm,124.333mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (90.043mm,124.333mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (91.694mm,124.333mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (93.345mm,117.348mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (93.345mm,119.38mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (93.345mm,120.904mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (93.345mm,122.174mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (93.599mm,124.333mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (94.996mm,117.348mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (94.996mm,119.38mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (94.996mm,120.904mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (94.996mm,122.174mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (95.25mm,124.333mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (97.155mm,124.333mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (98.171mm,113.792mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (98.806mm,124.333mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-   Violation between Un-Routed Net Constraint: Via (99.695mm,113.792mm) from Top Layer to Bottom Layer Dead Copper - Net Not Assigned.
-Rule Violations :523
+Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=0.2mm) (Max=1mm) (Preferred=0.2mm) (All)
+Processing Rule : Width Constraint (Min=0.2mm) (Max=10mm) (Preferred=0.2mm) (All)
 Rule Violations :0
 
 Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
 Rule Violations :0
 
 Processing Rule : Acute Angle Constraint (Minimum=60.000) (All)
-   Violation between Acute Angle Constraint: (14.196 < 60.000) Between Track (34.036mm,69.342mm)(36.576mm,66.802mm) on Bottom Layer And Via (34.925mm,69.088mm) from Top Layer to Bottom Layer (Angle = 14.196)
-   Violation between Acute Angle Constraint: (16.920 < 60.000) Between Track (34.036mm,69.342mm)(36.576mm,66.802mm) on Bottom Layer And Via (34.925mm,69.088mm) from Top Layer to Bottom Layer (Angle = 16.920)
-   Violation between Acute Angle Constraint: (45.413 < 60.000) Between Track (71.595mm,93.515mm)(71.712mm,93.398mm) on Top Layer And Track (71.712mm,93.379mm)(73.142mm,91.948mm) on Top Layer (Angle = 45.413)
-   Violation between Acute Angle Constraint: (45.000 < 60.000) Between Pad R17-1(76.788mm,87.249mm) on Top Layer And Track (75.731mm,89.023mm)(76.997mm,87.757mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 60.000) Between Track (91.821mm,87.249mm)(132.588mm,87.249mm) on Bottom Layer And Track (91.821mm,87.249mm)(95.758mm,83.312mm) on Bottom Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (50.624 < 60.000) Between Region (0 hole(s)) Bottom Layer And Via (85.786mm,104.671mm) from Top Layer to Bottom Layer (Angle = 50.624)
-   Violation between Acute Angle Constraint: (45.000 < 60.000) Between Track (73.269mm,104.57mm)(73.269mm,107.644mm) on Top Layer And Track (73.707mm,104.314mm)(75.389mm,105.996mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (47.911 < 60.000) Between Pad C4-2(74.769mm,111.125mm) on Top Layer And Track (74.769mm,111.125mm)(75.15mm,111.506mm) on Top Layer (Angle = 47.911)
-   Violation between Acute Angle Constraint: (45.000 < 60.000) Between Region (0 hole(s)) Top Layer And Track (66.04mm,68.165mm)(68.284mm,65.921mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 60.000) Between Track (101.603mm,123.19mm)(103.251mm,121.542mm) on Bottom Layer And Track (101.603mm,123.19mm)(105.283mm,123.19mm) on Bottom Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 60.000) Between Track (118.801mm,113.792mm)(118.801mm,118.237mm) on Top Layer And Track (118.801mm,113.792mm)(119.944mm,114.935mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (56.694 < 60.000) Between Pad DC PJ-3(30.12mm,116.185mm) on Multi-Layer And Track (27.02mm,119.885mm)(29.524mm,117.381mm) on Top Layer (Angle = 56.694)
-   Violation between Acute Angle Constraint: (45.000 < 60.000) Between Track (27.178mm,36.068mm)(52.705mm,36.068mm) on Top Layer And Track (28.176mm,36.177mm)(29.337mm,37.338mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (45.000 < 60.000) Between Region (0 hole(s)) Top Layer And Track (64.353mm,66.965mm)(64.825mm,67.437mm) on Top Layer (Angle = 45.000)
-   Violation between Acute Angle Constraint: (44.831 < 60.000) Between Track (69.469mm,118.007mm)(74.398mm,118.007mm) on Bottom Layer And Track (71.882mm,120.523mm)(74.398mm,118.007mm) on Bottom Layer (Angle = 44.831)
-   Violation between Acute Angle Constraint: (45.000 < 60.000) Between Track (80.391mm,122.047mm)(81.534mm,123.19mm) on Bottom Layer And Track (80.391mm,122.047mm)(86.614mm,122.047mm) on Bottom Layer (Angle = 45.000)
-Rule Violations :16
+   Violation between Acute Angle Constraint: (24.738 < 60.000) Between Region (0 hole(s)) Top Layer And Track (111.506mm,96.774mm)(127.762mm,96.774mm) on Top Layer (Angle = 24.738)
+   Violation between Acute Angle Constraint: (47.561 < 60.000) Between Track (73.269mm,104.57mm)(73.269mm,107.644mm) on Top Layer And Track (73.707mm,104.314mm)(75.389mm,105.996mm) on Top Layer (Angle = 47.561)
+   Violation between Acute Angle Constraint: (25.017 < 60.000) Between Pad U1-2(78.039mm,118.34mm) on Top Layer And Region (0 hole(s)) Top Layer (Angle = 25.017)
+Rule Violations :3
 
 Processing Rule : Hole Size Constraint (Min=0.2mm) (Max=10mm) (All)
 Rule Violations :0
@@ -645,16 +60,13 @@ Processing Rule : Hole To Hole Clearance (Gap=0.3mm) (All),(All)
    Violation between Hole To Hole Clearance Constraint: (Collision < 0.3mm) Between Pad DC PJ-3(30.12mm,116.185mm) on Multi-Layer And Pad DC PJ-3(30.62mm,116.185mm) on Multi-Layer Pad/Via Touching Holes
    Violation between Hole To Hole Clearance Constraint: (Collision < 0.3mm) Between Pad DC PJ-3(30.12mm,116.185mm) on Multi-Layer And Pad DC PJ-3(31.12mm,116.185mm) on Multi-Layer Pad/Via Touching Holes
    Violation between Hole To Hole Clearance Constraint: (Collision < 0.3mm) Between Pad DC PJ-3(30.62mm,116.185mm) on Multi-Layer And Pad DC PJ-3(31.12mm,116.185mm) on Multi-Layer Pad/Via Touching Holes
-   Violation between Hole To Hole Clearance Constraint: (Collision < 0.3mm) Between Via (108.204mm,103.124mm) from Top Layer to Bottom Layer And Via (108.204mm,103.124mm) from Top Layer to Bottom Layer Pad/Via Touching Holes
+   Violation between Hole To Hole Clearance Constraint: (0.191mm < 0.3mm) Between Via (132.138mm,96.01mm) from Top Layer to Bottom Layer And Via (132.715mm,96.139mm) from Top Layer to Bottom Layer 
 Rule Violations :30
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)
-   Violation between Minimum Solder Mask Sliver Constraint: (0.192mm < 0.2mm) Between Pad C17-1(76.2mm,73.267mm) on Bottom Layer And Via (77.089mm,74.295mm) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.192mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.196mm < 0.2mm) Between Pad F1-2(44.83mm,115.824mm) on Top Layer And Via (44.704mm,117.348mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.196mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.067mm < 0.2mm) Between Pad LM35-1(46.101mm,76.708mm) on Multi-Layer And Pad LM35-2(46.101mm,75.438mm) on Multi-Layer [Top Solder] Mask Sliver [0.067mm] / [Bottom Solder] Mask Sliver [0.067mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.067mm < 0.2mm) Between Pad LM35-2(46.101mm,75.438mm) on Multi-Layer And Pad LM35-3(46.101mm,74.168mm) on Multi-Layer [Top Solder] Mask Sliver [0.067mm] / [Bottom Solder] Mask Sliver [0.067mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-(68.79mm,73.395mm) on Top Layer And Pad MCU-2(68.29mm,73.395mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.192mm < 0.2mm) Between Pad MCU-(68.79mm,73.395mm) on Top Layer And Via (68.58mm,71.882mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.192mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-10(64.29mm,73.395mm) on Top Layer And Pad MCU-11(63.79mm,73.395mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-10(64.29mm,73.395mm) on Top Layer And Pad MCU-9(64.79mm,73.395mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-11(63.79mm,73.395mm) on Top Layer And Pad MCU-12(63.29mm,73.395mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
@@ -675,7 +87,6 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-27(64.29mm,65.035mm) on Top Layer And Pad MCU-28(64.79mm,65.035mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-28(64.79mm,65.035mm) on Top Layer And Pad MCU-29(65.29mm,65.035mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-29(65.29mm,65.035mm) on Top Layer And Pad MCU-30(65.79mm,65.035mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.181mm < 0.2mm) Between Pad MCU-29(65.29mm,65.035mm) on Top Layer And Via (65.405mm,66.548mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.181mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-3(67.79mm,73.395mm) on Top Layer And Pad MCU-4(67.29mm,73.395mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-30(65.79mm,65.035mm) on Top Layer And Pad MCU-31(66.29mm,65.035mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-31(66.29mm,65.035mm) on Top Layer And Pad MCU-32(66.79mm,65.035mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
@@ -683,10 +94,7 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-33(67.29mm,65.035mm) on Top Layer And Pad MCU-34(67.79mm,65.035mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-34(67.79mm,65.035mm) on Top Layer And Pad MCU-35(68.29mm,65.035mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-35(68.29mm,65.035mm) on Top Layer And Pad MCU-36(68.79mm,65.035mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.185mm < 0.2mm) Between Pad MCU-35(68.29mm,65.035mm) on Top Layer And Via (68.743mm,66.457mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.185mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.089mm < 0.2mm) Between Pad MCU-36(68.79mm,65.035mm) on Top Layer And Via (68.743mm,66.457mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.089mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-37(70.22mm,66.465mm) on Top Layer And Pad MCU-38(70.22mm,66.965mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.144mm < 0.2mm) Between Pad MCU-37(70.22mm,66.465mm) on Top Layer And Via (68.743mm,66.457mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.144mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-38(70.22mm,66.965mm) on Top Layer And Pad MCU-39(70.22mm,67.465mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-39(70.22mm,67.465mm) on Top Layer And Pad MCU-40(70.22mm,67.965mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-4(67.29mm,73.395mm) on Top Layer And Pad MCU-5(66.79mm,73.395mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
@@ -702,16 +110,11 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.2mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-6(66.29mm,73.395mm) on Top Layer And Pad MCU-7(65.79mm,73.395mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-7(65.79mm,73.395mm) on Top Layer And Pad MCU-8(65.29mm,73.395mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.017mm < 0.2mm) Between Pad MCU-8(65.29mm,73.395mm) on Top Layer And Pad MCU-9(64.79mm,73.395mm) on Top Layer [Top Solder] Mask Sliver [0.017mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.105mm < 0.2mm) Between Pad MIC29302-1(100.152mm,114.833mm) on Top Layer And Via (100.965mm,113.792mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.105mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.105mm < 0.2mm) Between Pad MIC29302-1(100.152mm,114.833mm) on Top Layer And Via (99.695mm,113.792mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.105mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.022mm < 0.2mm) Between Pad R4-1(76.454mm,106.092mm) on Bottom Layer And Via (76.632mm,104.742mm) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.022mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.114mm < 0.2mm) Between Pad R8-2(80.891mm,106.092mm) on Bottom Layer And Via (79.502mm,105.156mm) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.114mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.111mm < 0.2mm) Between Pad SW2-2(125.801mm,118.237mm) on Top Layer And Via (127.373mm,118.56mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.111mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.157mm < 0.2mm) Between Pad U1-1(77.089mm,118.34mm) on Top Layer And Pad U1-2(78.039mm,118.34mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.157mm < 0.2mm) Between Pad U1-2(78.039mm,118.34mm) on Top Layer And Pad U1-3(78.989mm,118.34mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.157mm < 0.2mm) Between Pad U1-4(78.989mm,120.65mm) on Top Layer And Pad U1-5(78.039mm,120.65mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.157mm < 0.2mm) Between Pad U1-5(78.039mm,120.65mm) on Top Layer And Pad U1-6(77.089mm,120.65mm) on Top Layer [Top Solder] Mask Sliver [0.157mm]
-Rule Violations :62
+Rule Violations :50
 
 Processing Rule : Silk To Solder Mask (Clearance=0.01mm) (IsPad),(All)
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad C10-1(80.669mm,101.346mm) on Top Layer And Track (80.869mm,101.946mm)(81.719mm,101.946mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
@@ -740,8 +143,8 @@ Processing Rule : Silk To Solder Mask (Clearance=0.01mm) (IsPad),(All)
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad C20-1(75.069mm,78.994mm) on Top Layer And Track (75.319mm,78.394mm)(76.119mm,78.394mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad C2-1(69.469mm,118.007mm) on Bottom Layer And Track (68.869mm,118.257mm)(68.869mm,119.057mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad C2-1(69.469mm,118.007mm) on Bottom Layer And Track (70.069mm,118.207mm)(70.069mm,119.057mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad C22-1(124.817mm,114.935mm) on Top Layer And Track (123.767mm,114.335mm)(124.617mm,114.335mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad C22-1(124.817mm,114.935mm) on Top Layer And Track (123.767mm,115.535mm)(124.567mm,115.535mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad C22-1(123.42mm,114.935mm) on Top Layer And Track (122.37mm,114.335mm)(123.22mm,114.335mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad C22-1(123.42mm,114.935mm) on Top Layer And Track (122.37mm,115.535mm)(123.17mm,115.535mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad C23--(102.949mm,110.39mm) on Top Layer And Track (102.999mm,108.64mm)(102.999mm,112.14mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad C23-+(109.099mm,110.39mm) on Top Layer And Track (109.049mm,108.64mm)(109.049mm,112.14mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad C24--(102.949mm,105.725mm) on Top Layer And Track (102.999mm,103.975mm)(102.999mm,107.475mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
@@ -760,93 +163,21 @@ Processing Rule : Silk To Solder Mask (Clearance=0.01mm) (IsPad),(All)
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad C8-1(69.951mm,93.515mm) on Top Layer And Track (70.551mm,93.765mm)(70.551mm,94.565mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad C9-1(66.447mm,93.515mm) on Top Layer And Track (65.847mm,93.715mm)(65.847mm,94.565mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad C9-1(66.447mm,93.515mm) on Top Layer And Track (67.047mm,93.765mm)(67.047mm,94.565mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-DATA(123.825mm,76.454mm) on Multi-Layer And Track (125.222mm,73.152mm)(125.222mm,82.042mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-DATA(123.825mm,76.454mm) on Multi-Layer And Track (125.222mm,73.152mm)(125.222mm,82.169mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-DATA(123.825mm,76.454mm) on Multi-Layer And Track (125.222mm,73.152mm)(125.222mm,82.169mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-DATA(123.825mm,76.454mm) on Multi-Layer And Track (125.222mm,75.311mm)(125.222mm,77.597mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-DATA(123.825mm,76.454mm) on Multi-Layer And Track (125.222mm,75.311mm)(125.222mm,77.66mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-GND(123.825mm,81.534mm) on Multi-Layer And Track (117.983mm,82.169mm)(125.222mm,82.169mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-GND(123.825mm,81.534mm) on Multi-Layer And Track (120.65mm,82.042mm)(125.222mm,82.042mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-GND(123.825mm,81.534mm) on Multi-Layer And Track (120.65mm,82.042mm)(125.222mm,82.042mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-GND(123.825mm,81.534mm) on Multi-Layer And Track (122.174mm,82.169mm)(125.222mm,82.169mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-GND(123.825mm,81.534mm) on Multi-Layer And Track (122.174mm,82.169mm)(125.222mm,82.169mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-GND(123.825mm,81.534mm) on Multi-Layer And Track (125.222mm,73.152mm)(125.222mm,82.042mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-GND(123.825mm,81.534mm) on Multi-Layer And Track (125.222mm,73.152mm)(125.222mm,82.169mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-GND(123.825mm,81.534mm) on Multi-Layer And Track (125.222mm,73.152mm)(125.222mm,82.169mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-GND(123.825mm,81.534mm) on Multi-Layer And Track (125.222mm,80.01mm)(125.222mm,82.042mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-GND(123.825mm,81.534mm) on Multi-Layer And Track (125.222mm,80.01mm)(125.222mm,82.169mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-NC(123.825mm,78.994mm) on Multi-Layer And Track (125.222mm,73.152mm)(125.222mm,82.042mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-NC(123.825mm,78.994mm) on Multi-Layer And Track (125.222mm,73.152mm)(125.222mm,82.169mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-NC(123.825mm,78.994mm) on Multi-Layer And Track (125.222mm,73.152mm)(125.222mm,82.169mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-NC(123.825mm,78.994mm) on Multi-Layer And Track (125.222mm,77.66mm)(125.222mm,80.01mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-NC(123.825mm,78.994mm) on Multi-Layer And Track (125.222mm,77.66mm)(125.222mm,80.01mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-VDD(123.825mm,73.914mm) on Multi-Layer And Track (117.983mm,73.152mm)(125.222mm,73.152mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-VDD(123.825mm,73.914mm) on Multi-Layer And Track (120.65mm,73.152mm)(125.222mm,73.152mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-VDD(123.825mm,73.914mm) on Multi-Layer And Track (122.174mm,73.152mm)(125.222mm,73.152mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-VDD(123.825mm,73.914mm) on Multi-Layer And Track (125.222mm,73.152mm)(125.222mm,82.042mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-VDD(123.825mm,73.914mm) on Multi-Layer And Track (125.222mm,73.152mm)(125.222mm,82.169mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT11-VDD(123.825mm,73.914mm) on Multi-Layer And Track (125.222mm,73.152mm)(125.222mm,82.169mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-DATA(123.825mm,58.039mm) on Multi-Layer And Track (125.222mm,54.737mm)(125.222mm,63.754mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-DATA(123.825mm,58.039mm) on Multi-Layer And Track (125.222mm,54.864mm)(125.222mm,63.754mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-DATA(123.825mm,58.039mm) on Multi-Layer And Track (125.222mm,56.769mm)(125.222mm,59.245mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-GND(123.825mm,63.119mm) on Multi-Layer And Track (117.983mm,63.754mm)(125.222mm,63.754mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-GND(123.825mm,63.119mm) on Multi-Layer And Track (120.904mm,63.754mm)(125.222mm,63.754mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-GND(123.825mm,63.119mm) on Multi-Layer And Track (122.174mm,63.754mm)(125.222mm,63.754mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-GND(123.825mm,63.119mm) on Multi-Layer And Track (125.222mm,54.737mm)(125.222mm,63.754mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-GND(123.825mm,63.119mm) on Multi-Layer And Track (125.222mm,54.864mm)(125.222mm,63.754mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-GND(123.825mm,63.119mm) on Multi-Layer And Track (125.222mm,61.595mm)(125.222mm,63.754mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-NC(123.825mm,60.579mm) on Multi-Layer And Track (125.222mm,54.737mm)(125.222mm,63.754mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-NC(123.825mm,60.579mm) on Multi-Layer And Track (125.222mm,54.864mm)(125.222mm,63.754mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-VDD(123.825mm,55.499mm) on Multi-Layer And Track (117.983mm,54.737mm)(125.222mm,54.737mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-VDD(123.825mm,55.499mm) on Multi-Layer And Track (120.904mm,54.737mm)(125.222mm,54.737mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-VDD(123.825mm,55.499mm) on Multi-Layer And Track (122.174mm,54.864mm)(125.222mm,54.864mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-VDD(123.825mm,55.499mm) on Multi-Layer And Track (125.222mm,54.737mm)(125.222mm,56.769mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-VDD(123.825mm,55.499mm) on Multi-Layer And Track (125.222mm,54.737mm)(125.222mm,63.754mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad DHT22-VDD(123.825mm,55.499mm) on Multi-Layer And Track (125.222mm,54.864mm)(125.222mm,63.754mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad S1-1(37.247mm,120.396mm) on Multi-Layer And Track (35.927mm,118.316mm)(35.927mm,122.486mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
    Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.01mm) Between Pad S1-2(44.747mm,120.396mm) on Multi-Layer And Track (46.067mm,118.316mm)(46.067mm,122.486mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-Rule Violations :91
+Rule Violations :48
 
 Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
-   Violation between Silk To Silk Clearance Constraint: (0.2mm < 0.254mm) Between Text "DATA" (121.292mm,58.8mm) on Top Overlay And Track (120.904mm,56.769mm)(125.222mm,56.769mm) on Top Overlay Silk Text to Silk Clearance [0.2mm]
-   Violation between Silk To Silk Clearance Constraint: (0.2mm < 0.254mm) Between Text "DATA" (121.292mm,58.8mm) on Top Overlay And Track (120.904mm,56.769mm)(125.222mm,56.769mm) on Top Overlay Silk Text to Silk Clearance [0.2mm]
-   Violation between Silk To Silk Clearance Constraint: (0.2mm < 0.254mm) Between Text "DATA" (121.292mm,77.342mm) on Top Overlay And Track (120.65mm,75.311mm)(125.222mm,75.311mm) on Top Overlay Silk Text to Silk Clearance [0.2mm]
-   Violation between Silk To Silk Clearance Constraint: (0.127mm < 0.254mm) Between Text "DATA" (121.292mm,77.342mm) on Top Overlay And Track (120.65mm,77.597mm)(125.222mm,77.597mm) on Top Overlay Silk Text to Silk Clearance [0.127mm]
-   Violation between Silk To Silk Clearance Constraint: (0.191mm < 0.254mm) Between Text "DATA" (121.292mm,77.342mm) on Top Overlay And Track (120.65mm,77.66mm)(125.222mm,77.66mm) on Top Overlay Silk Text to Silk Clearance [0.191mm]
-   Violation between Silk To Silk Clearance Constraint: (0.127mm < 0.254mm) Between Text "GND" (121.289mm,81.788mm) on Top Overlay And Track (120.65mm,82.042mm)(125.222mm,82.042mm) on Top Overlay Silk Text to Silk Clearance [0.127mm]
-   Violation between Silk To Silk Clearance Constraint: (0.127mm < 0.254mm) Between Text "GND" (121.289mm,81.788mm) on Top Overlay And Track (120.65mm,82.042mm)(125.222mm,82.042mm) on Top Overlay Silk Text to Silk Clearance [0.127mm]
    Violation between Silk To Silk Clearance Constraint: (0.233mm < 0.254mm) Between Text "ON" (42.447mm,119.896mm) on Top Overlay And Track (42.037mm,119.586mm)(42.037mm,121.126mm) on Top Overlay Silk Text to Silk Clearance [0.233mm]
-   Violation between Silk To Silk Clearance Constraint: (0.127mm < 0.254mm) Between Text "SWCLK" (73.533mm,43.061mm) on Top Overlay And Track (73.279mm,42.418mm)(73.279mm,44.958mm) on Top Overlay Silk Text to Silk Clearance [0.127mm]
-   Violation between Silk To Silk Clearance Constraint: (0.127mm < 0.254mm) Between Text "VCC" (121.289mm,56.514mm) on Top Overlay And Track (120.904mm,56.769mm)(125.222mm,56.769mm) on Top Overlay Silk Text to Silk Clearance [0.127mm]
-   Violation between Silk To Silk Clearance Constraint: (0.127mm < 0.254mm) Between Text "VCC" (121.289mm,56.514mm) on Top Overlay And Track (120.904mm,56.769mm)(125.222mm,56.769mm) on Top Overlay Silk Text to Silk Clearance [0.127mm]
-Rule Violations :11
+Rule Violations :1
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
-   Violation between Net Antennae: Track (65.284mm,73.401mm)(65.284mm,74.817mm) on Top Layer 
-   Violation between Net Antennae: Via (100.899mm,104.925mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (74.422mm,123.571mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (85.852mm,86.995mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (88.646mm,116.332mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (88.773mm,114.681mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (88.773mm,121.031mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (89.027mm,119.253mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (89.535mm,116.332mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (89.662mm,114.681mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (89.662mm,121.031mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (89.916mm,119.253mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (90.551mm,114.681mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (90.551mm,121.031mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (90.805mm,119.253mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (91.821mm,114.681mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (91.821mm,121.031mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (92.075mm,119.253mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (92.329mm,86.233mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (93.406mm,109.116mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (95.25mm,84.201mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (96.073mm,104.417mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (97.343mm,101.369mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (98.298mm,86.868mm) from Top Layer to Bottom Layer 
-Rule Violations :24
+   Violation between Net Antennae: Via (27.432mm,88.646mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (74.168mm,100.248mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (74.168mm,101.137mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (76.454mm,100.248mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (76.454mm,101.137mm) from Top Layer to Bottom Layer 
+Rule Violations :5
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
    Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Track (101.981mm,34.417mm)(101.981mm,38.862mm) on Top Overlay 
@@ -886,6 +217,6 @@ Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (Al
 Rule Violations :0
 
 
-Violations Detected : 837
+Violations Detected : 168
 Waived Violations : 0
-Time Elapsed        : 00:00:03
+Time Elapsed        : 00:00:04
