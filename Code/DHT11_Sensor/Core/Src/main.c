@@ -22,10 +22,11 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
-#include "uart.h"
-#include "DHT11_LIB.h"
+
 #include "stdio.h"
 #include "string.h"
+#include "uart.h"
+#include "DHT11_LIB.h"
 
 /* USER CODE END Includes */
 
@@ -36,6 +37,12 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+/*
+char msg[50] ;
+char message1[16];
+char message1[16];
+uint8_t TOUT =0 , CheckSum , i;
+uint8_t T_Byte1 , T_Byte2 , RH_Byte1 , RH_Byte2 ;*/
 
 /* USER CODE END PD */
 
@@ -48,10 +55,11 @@
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
-char txt[100];
 
-unsigned int DHT11_TEMP;
-unsigned int DHT11_HUM;
+char texto[100];
+unsigned int DHT11_TEMP;// Declarar en al main
+unsigned int DHT11_HUM;  //declarar en el main
+uint32_t milis,timepass;
 
 /* USER CODE END PV */
 
@@ -65,6 +73,100 @@ static void MX_USART1_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+/*************************************** DHT11 *********************************/
+/*
+void delay_us ( uint16_t us)
+{
+    __HAL_TIM_SET_COUNTER(&htim1,0);
+    while(__HAL_TIM_GET_COUNTER(&htim1) < us);
+}
+
+void start_signal (void){
+     GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+
+      GPIO_InitStruct.Pin = DHT11_Pin;
+      GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+      GPIO_InitStruct.Pull = GPIO_NOPULL;
+      GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+      HAL_GPIO_Init(DHT11_GPIO_Port, &GPIO_InitStruct);
+
+      HAL_GPIO_WritePin(DHT11_GPIO_Port, DHT11_Pin, GPIO_PIN_RESET);
+      HAL_Delay(18);
+      HAL_GPIO_WritePin(DHT11_GPIO_Port, DHT11_Pin, GPIO_PIN_SET);
+      delay_us(30);
+
+      GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+      HAL_GPIO_Init(DHT11_GPIO_Port, &GPIO_InitStruct);
+
+}
+
+
+
+uint8_t check_response(void){
+    TOUT=0;
+    __HAL_TIM_SET_COUNTER(&htim1,0);
+    while(!HAL_GPIO_ReadPin(DHT11_GPIO_Port, DHT11_Pin) && (__HAL_TIM_GET_COUNTER(&htim1) < 100)) {};
+    if(__HAL_TIM_GET_COUNTER(&htim1)>= 100){
+        return 0; //timeout
+    }
+    while(HAL_GPIO_ReadPin(DHT11_GPIO_Port, DHT11_Pin) && (__HAL_TIM_GET_COUNTER(&htim1) < 100)) {};
+        if(__HAL_TIM_GET_COUNTER(&htim1)>= 100){
+            return 0; //timeout
+        }
+    return 1;
+}
+
+uint8_t read_byte(void){
+    uint8_t num =0 ;
+    for(i=0 ;i<8; i++){
+        while(!HAL_GPIO_ReadPin(DHT11_GPIO_Port, DHT11_Pin))  {};
+        __HAL_TIM_SET_COUNTER(&htim1,0);
+        while(HAL_GPIO_ReadPin(DHT11_GPIO_Port, DHT11_Pin))  {};
+        if(__HAL_TIM_GET_COUNTER(&htim1) > 40)
+        {
+            num |= (1 << (7 - i));
+        }
+
+    }
+    return num;
+}
+
+void process_sensor_data(void){
+    RH_Byte1 = read_byte();
+    RH_Byte2 = read_byte();
+    T_Byte1 = read_byte();
+    T_Byte2 = read_byte();
+    CheckSum = read_byte();
+
+    uint8_t humidity_integer =  RH_Byte1 ;
+    uint8_t humidity_decimal =  RH_Byte2 / 10 ;
+
+    uint8_t temperature_integer =  T_Byte1 ;
+    uint8_t temperature_decimal =  T_Byte2 / 10 ;
+
+    if(CheckSum ==((RH_Byte1+RH_Byte2 +T_Byte1+T_Byte2)& 0xff)){
+        snprintf(msg,sizeof(msg),"RH = %d.%d %%\r\n",humidity_integer,humidity_decimal);
+        send_uart_message(msg);
+        snprintf(msg,sizeof(msg),"temp = %d.%d C\r\n",temperature_integer,temperature_decimal);
+        send_uart_message(msg);
+
+    }else
+    {
+        send_uart_message("Checksum Errors ! Trying Again ...\r\n");
+    }
+}
+
+void send_uart_message(char *messsage){
+    HAL_UART_Transmit(&huart1, (uint8_t*)messsage, strlen(messsage), HAL_MAX_DELAY);
+}
+
+*/
+/******************************* DHT11 *********************************************/
+
+
+
 
 /* USER CODE END 0 */
 
@@ -99,8 +201,8 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-
   delay_us_dwt_init();
+  milis=uwTick;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -109,14 +211,24 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
-	  if( DHT11_ok()==1)
-	 	  		 {
-	 	  		 DHT11_Read();
-	 	  		 sprintf(txt,"Tempt=%u    Hum=%u\r\n",(unsigned int)DHT11_TEMP,(unsigned int)DHT11_HUM);
-	 	  		 uartx_write_text(&huart1, txt);
-	 	  		 }
-	 	      	 else uartx_write_text(&huart1, "DHTPbad\r\n");
-	  HAL_Delay(1000);
+	  if (timepass>=1000)
+	  	{
+	  	  if( DHT11_ok()==1)
+	  	  		 {
+	  	  		 DHT11_Read();
+	  	  		 }
+	  	      	 else uartx_write_text(&huart1, (uint8_t *)"DHTPbad\r\n");
+
+	         milis=uwTick;
+	  	}
+
+
+	  	    timepass= uwTick-milis;
+	  		 sprintf(texto,"Temp=%u    Hum=%u\r\n",(unsigned int)DHT11_TEMP,(unsigned int)DHT11_HUM);    // manda info serialmente
+	  		uartx_write_text(&huart1, (uint8_t *)texto);
+
+
+	  	  HAL_Delay(200);
 
     /* USER CODE BEGIN 3 */
   }
