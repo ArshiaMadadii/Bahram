@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=GPS_RX Pin=MCU1-12
+Removed Pin From Net: NetName=GPS_TX Pin=MCU1-13
+Removed Pin From Net: NetName=RX_SIM->TX_MCU Pin=MCU1-21
+Removed Pin From Net: NetName=TX_SIM->RX_MCU Pin=MCU1-22
+Added Pin To Net: NetName=RX_SIM->TX_MCU Pin=MCU1-12
+Added Pin To Net: NetName=TX_SIM->RX_MCU Pin=MCU1-13
+Added Pin To Net: NetName=GPS_RX Pin=MCU1-21
+Added Pin To Net: NetName=GPS_TX Pin=MCU1-22
+Added Member To Class: ClassName=Output Member=Component R22 4K7
+Added Room: Name=Comm
+Added Room: Name=MCU
+Added Room: Name=Output
+Added Room: Name=Power

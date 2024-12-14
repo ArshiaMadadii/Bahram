@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=NetLED6_2 Pin=LED6-1
+Removed Pin From Net: NetName=GND Pin=LED6-2
+Removed Pin From Net: NetName=GND Pin=MCU-8
+Added Pin To Net: NetName=GND Pin=CO1-2
+Added Pin To Net: NetName=GND Pin=CO2-2
+Added Pin To Net: NetName=GND Pin=LED6-1
+Added Pin To Net: NetName=NetLED6_2 Pin=LED6-2
+Added Pin To Net: NetName=VSSA Pin=MCU-8
+Added Room: Name=Comm
+Added Room: Name=MCU
+Added Room: Name=Output
+Added Room: Name=Power

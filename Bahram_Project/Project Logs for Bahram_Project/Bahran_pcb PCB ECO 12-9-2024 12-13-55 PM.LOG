@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=12V_IN Pin=DP1-2
+Change Component Designator: OldDesignator=DCPJ NewDesignator=DC PJ
+Change Net Name : Old Net Name=NetBattery1_1 New Net Name=NetB1_1
+Change Net Name : Old Net Name=NetBattery1_2 New Net Name=NetB1_2
+Added Pin To Net: NetName=12V Pin=DC PJ-1
+Added Pin To Net: NetName=12V Pin=DC PJ-1
+Added Pin To Net: NetName=12V Pin=DC PJ-1
+Added Pin To Net: NetName=12V Pin=DC PJ-1
+Added Pin To Net: NetName=12V Pin=DC PJ-1
+Added Pin To Net: NetName=12V Pin=DC PJ-1
+Added Pin To Net: NetName=12V Pin=DC PJ-1
+Added Pin To Net: NetName=12V Pin=DP1-2
+Added Pin To Net: NetName=12V Pin=S1-1
+Added Net: Name=12V
+Added Member To Class: ClassName=Power Member=Component DC PJ DC Power Jack
+Added Room: Name=Power

@@ -1,0 +1,13 @@
+Added Component: Designator=LED11(LED_0603_RED)
+Added Component: Designator=R33(RESC3413X04N)
+Add component (AddParameter): Name = "Data"; Value = "16-12-2016"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Desc."; Value = "RES SMD 0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Designer"; Value = "Abbas Basereh"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=LED11-2
+Added Pin To Net: NetName=4V2 Pin=R33-2
+Added Pin To Net: NetName=NetLED11_1 Pin=LED11-1
+Added Pin To Net: NetName=NetLED11_1 Pin=R33-1
+Added Net: Name=NetLED11_1
+Added Member To Class: ClassName=Power Member=Component LED11 LED SMD 0603 BLUE
+Added Member To Class: ClassName=Power Member=Component R33 330
+Added Room: Name=Power

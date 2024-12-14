@@ -183,7 +183,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim1);
   uartx_write_text(&huart1, "Hello\r\n");
-  SSD1306_Init();
+  //SSD1306_Init();
   uartx_write_text(&huart1, "Hello DHT11\r\n");
   /* USER CODE END 2 */
 
@@ -193,6 +193,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  HAL_Delay(20);
+	  uartx_write_text(&huart1, "0");
 	  if(DHT11_Start())
 	     {
 	       RHI = DHT11_Read(); // Relative humidity integral
@@ -210,23 +211,26 @@ int main(void)
 	         TFI = tFahrenheit;  // Fahrenheit integral
 	         TFD = tFahrenheit*10-TFI*10; // Fahrenheit decimal
 	         sprintf(strCopy,"%d.%d C  \r\n", TCI, TCD);
-	         SSD1306_GotoXY (0, 0);
+	        // SSD1306_GotoXY (0, 0);
 	         //uartx_write_text(&huart1, "1\r\n");
-	         SSD1306_Puts (strCopy, &Font_11x18, 1);
-	         uartx_write_text(&huart1, strCopy);
+	        // SSD1306_Puts (strCopy, &Font_11x18, 1);
+	         //uartx_write_text(&huart1, "1");
+	        // uartx_write_text(&huart1, strCopy);
 	         sprintf(strCopy,"%d.%d F   \r\n", TFI, TFD);
-	         SSD1306_GotoXY (0, 20);
-	         SSD1306_Puts (strCopy, &Font_11x18, 1);
+	          uartx_write_text(&huart1, strCopy);
+	       //  SSD1306_GotoXY (0, 20);
+	       //  SSD1306_Puts (strCopy, &Font_11x18, 1);
 	         //uartx_write_text(&huart1, "2\r\n");
-	         uartx_write_text(&huart1, strCopy);
-	         sprintf(strCopy,"%d.%d %%  \r\n", RHI, RHD);
-	         SSD1306_GotoXY (0, 40);
-	         SSD1306_Puts (strCopy, &Font_11x18, 1);
+	         //uartx_write_text(&huart1, strCopy);
+	        // sprintf(strCopy,"%d.%d %%  \r\n", RHI, RHD);
+	       //  SSD1306_GotoXY (0, 40);
+	       //  SSD1306_Puts (strCopy, &Font_11x18, 1);
 	         //uartx_write_text(&huart1, "3\r\n");
-	         uartx_write_text(&huart1, strCopy);
-	         SSD1306_UpdateScreen();
+	        // uartx_write_text(&huart1, strCopy);
+	      //   SSD1306_UpdateScreen();
 	       }
 	     }
+	  uartx_write_text(&huart1, "10");
 	     HAL_Delay(2000);
     /* USER CODE BEGIN 3 */
   }

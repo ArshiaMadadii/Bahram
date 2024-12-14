@@ -24,7 +24,7 @@
 #include "uart.h"
 #include "stdio.h"
 #include "string.h"
-#include "DHT22_LIB.h"
+//#include "DHT22_LIB.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -40,9 +40,9 @@
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD *//*
+/* USER CODE BEGIN PD */
 #define DHT22_Pin GPIO_PIN_9
-#define DHT22_GPIO_Port GPIOB*/
+#define DHT22_GPIO_Port GPIOB
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -58,7 +58,7 @@ UART_HandleTypeDef huart1;
 char outputBuffer[50];
 
 /* USER CODE BEGIN PV */
-/*
+
 char message1[16];
 char message2[16];
 uint8_t TOUT = 0, CheckSum, i;
@@ -67,7 +67,7 @@ float Voltage_mV = 0;
 float Temperature_C = 0;
 float Temperature_F = 0;
 char msg[50];
-*/
+
 float temperature = 0.0f;
 float humidity = 0.0f;
 /* USER CODE END PV */
@@ -84,86 +84,15 @@ static void MX_USART1_UART_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-/********************************** DHT22 function ******************************/
-/*
-	  	#define DHT22_PORT GPIOB
-		#define DHT22_PIN GPIO_PIN_9
-		uint8_t RH1, RH2, TC1, TC2, SUM, CHECK;
-		uint32_t pMillis, cMillis;
-		float tCelsius = 0;
-		float tFahrenheit = 0;
-		float RH = 0;
-
-		void microDelay (uint16_t delay)
-		{
-		  __HAL_TIM_SET_COUNTER(&htim1, 0);
-		  while (__HAL_TIM_GET_COUNTER(&htim1) < delay);
-		}
-
-		uint8_t DHT22_Start (void)
-		{
-		  uint8_t Response = 0;
-		  GPIO_InitTypeDef GPIO_InitStructPrivate = {0};
-		  GPIO_InitStructPrivate.Pin = DHT22_PIN;
-		  GPIO_InitStructPrivate.Mode = GPIO_MODE_OUTPUT_PP;
-		  GPIO_InitStructPrivate.Speed = GPIO_SPEED_FREQ_LOW;
-		  GPIO_InitStructPrivate.Pull = GPIO_NOPULL;
-		  HAL_GPIO_Init(DHT22_PORT, &GPIO_InitStructPrivate); // set the pin as output
-		  HAL_GPIO_WritePin (DHT22_PORT, DHT22_PIN, 0);   // pull the pin low
-		  microDelay (1300);   // wait for 1300us
-		  HAL_GPIO_WritePin (DHT22_PORT, DHT22_PIN, 1);   // pull the pin high
-		  microDelay (30);   // wait for 30us
-		  GPIO_InitStructPrivate.Mode = GPIO_MODE_INPUT;
-		  GPIO_InitStructPrivate.Pull = GPIO_PULLUP;
-		  HAL_GPIO_Init(DHT22_PORT, &GPIO_InitStructPrivate); // set the pin as input
-		  microDelay (40);
-		  if (!(HAL_GPIO_ReadPin (DHT22_PORT, DHT22_PIN)))
-		  {
-			microDelay (80);
-			if ((HAL_GPIO_ReadPin (DHT22_PORT, DHT22_PIN))) Response = 1;
-		  }
-		  pMillis = HAL_GetTick();
-		  cMillis = HAL_GetTick();
-		  while ((HAL_GPIO_ReadPin (DHT22_PORT, DHT22_PIN)) && pMillis + 2 > cMillis)
-		  {
-			cMillis = HAL_GetTick();
-		  }
-		  return Response;
-		}
-
-		uint8_t DHT22_Read (void)
-		{
-		  uint8_t a,b;
-		  for (a=0;a<8;a++)
-		  {
-			pMillis = HAL_GetTick();
-			cMillis = HAL_GetTick();
-			while (!(HAL_GPIO_ReadPin (DHT22_PORT, DHT22_PIN)) && pMillis + 2 > cMillis)
-			{  // wait for the pin to go high
-			  cMillis = HAL_GetTick();
-			}
-			microDelay (40);   // wait for 40 us
-			if (!(HAL_GPIO_ReadPin (DHT22_PORT, DHT22_PIN)))   // if the pin is low
-			  b&= ~(1<<(7-a));
-			else
-			  b|= (1<<(7-a));
-			pMillis = HAL_GetTick();
-			cMillis = HAL_GetTick();
-			while ((HAL_GPIO_ReadPin (DHT22_PORT, DHT22_PIN)) && pMillis + 2 > cMillis)
-			{  // wait for the pin to go low
-			  cMillis = HAL_GetTick();
-			}
-		  }
-		  return b;
-		}
+/*********************************** DHT22 Function ***************************/
 
 
+void delay_us(uint16_t us)
+{
 
-void delay_us(uint16_t us){
 	__HAL_TIM_SET_COUNTER(&htim1,0);
 	while(__HAL_TIM_GET_COUNTER(&htim1) < us);
 }
-
 
 
 void start_signal(void) {
@@ -183,7 +112,6 @@ void start_signal(void) {
     HAL_GPIO_Init(DHT22_GPIO_Port, &GPIO_InitStruct);
 }
 
-
 uint8_t check_response(void) {
     TOUT = 0;
     __HAL_TIM_SET_COUNTER(&htim1, 0);
@@ -199,9 +127,6 @@ uint8_t check_response(void) {
     return 1;
 }
 
-
-
-
 uint8_t read_byte(void) {
     uint8_t num = 0;
     for (i = 0; i < 8; i++) {
@@ -214,15 +139,16 @@ uint8_t read_byte(void) {
     return num;
 }
 
-
-
 void send_uart(char *string) {
     HAL_UART_Transmit(&huart1, (uint8_t*)string, strlen(string), HAL_MAX_DELAY);
 }
 
 
-*/
-/************************ DHT22 function finish **************************/
+
+
+/************************************ DHT22 ******************************************/
+
+
 
 /* USER CODE END 0 */
 
@@ -258,73 +184,16 @@ int main(void)
   MX_TIM1_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+  /* USER CODE BEGIN 2 */
+ HAL_TIM_Base_Start(&htim1);
+ send_uart("Initialization complete\n\r");
+     /* USER CODE END 2 */
 
-  //HAL_TIM_Base_Start(&htim1);
-
-
-  // Initialize DHT22 library
-    //DHT22_Init(&htim1);
-
-    // Define sensorData of type DHT22_Data
-    //DHT22_Data sensorData;
-	//HAL_TIM_Base_Start(&htim1);
-	DHT22_Init();
-	//send_uart("Initialization complete\n\r");
-	uartx_write_text(&huart1, "Start...\r\n");
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
-	 // HAL_Delay(10);
-	  /*
-	  HAL_Delay(2000); // 1-second delay
-	  uartx_write_text(&huart1, "1...\r\n");
-	    if (DHT22_Start())
-	    {
-	        RH1 = DHT22_Read(); // Read the first 8 bits of humidity
-	        RH2 = DHT22_Read(); // Read the second 8 bits of humidity
-	        TC1 = DHT22_Read(); // Read the first 8 bits of temperature
-	        TC2 = DHT22_Read(); // Read the second 8 bits of temperature
-	        SUM = DHT22_Read(); // Read checksum
-	        CHECK = RH1 + RH2 + TC1 + TC2;
-	  	  uartx_write_text(&huart1, "2...\r\n");
 
-	        if (CHECK == SUM) // Validate checksum
-	        {
-	            if (TC1 > 127) // If TC1=10000000, temperature is negative
-	            {
-	                tCelsius = (float)TC2 / 10 * (-1);
-	            }
-	            else
-	            {
-	                tCelsius = (float)((TC1 << 8) | TC2) / 10;
-	            }
-
-	            RH = (float)((RH1 << 8) | RH2) / 10;
-
-	            // Store temperature and humidity in DHT22 structure
-	            DHT22.temperature = tCelsius; // Temperature in Celsius
-	            DHT22.humidity = RH;          // Relative humidity
-
-	            // Format the output into a string
-	            uartx_write_text(&huart1, "3...\r\n");
-	            sprintf(outputBuffer, "Temperature: %2.1f C, Humidity: %2.1f \r\n", DHT22.temperature, DHT22.humidity);
-
-	            // Display the formatted string if needed
-	          uartx_write_text(&huart1, outputBuffer);
-	          HAL_Delay(10);
-	 	  	  uartx_write_text(&huart1, "4...\r\n");
-
-	        }
-	    }
-*/
-
-    /* USER CODE BEGIN 3 */
-/*
-			  HAL_Delay(1000); // Delay for 1 second
+	  HAL_Delay(1000); // Delay for 1 second
 	          start_signal(); // Send start signal to DHT22
 
 	          uint8_t check = check_response();
@@ -363,22 +232,7 @@ int main(void)
 	                  send_uart("Checksum Error! Trying Again ...\r\n");
 	              }
 	          }
-*/
-
-
-	  if (DHT22_ReadData(&temperature, &humidity)) {
-	             char buffer[50];
-	             sprintf(buffer, "Temp: %.1f C, Hum: %.1f %%\n\r", temperature, humidity);
-	             DHT22_SendDebug(buffer);
-	         } else {
-	             DHT22_SendDebug("Failed to read from DHT22\n\r");
-	         }
-
-	         HAL_Delay(2000); // Wait 2 seconds between reads
-	     }
-
-
-
+	      }
   }
 
 /**

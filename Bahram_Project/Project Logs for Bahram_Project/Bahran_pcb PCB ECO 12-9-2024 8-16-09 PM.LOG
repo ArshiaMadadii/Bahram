@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GND Pin=MCU-8
+Added Pin To Net: NetName=VSSA Pin=MCU-8
+Added Room: Name=Comm
+Added Room: Name=MCU
+Added Room: Name=Output
+Added Room: Name=Power
